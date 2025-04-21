@@ -31,4 +31,4 @@ app.use("/api/v1", indexEndpoint);
 // }
 
 // Export untuk Vercel (serverless)
-export const handler = serverless(app);
+export default serverless(app);
