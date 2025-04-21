@@ -24,11 +24,11 @@ app.get("/", (_req: Request, res: Response) => {
 app.use("/api/v1", indexEndpoint);
 
 // Hanya untuk lokal development (bisa dihilangkan di prod)
-if (process.env.NODE_ENV !== "production") {
-  app.listen(port, () => {
-    console.log(`server dengan port ${port} berhasil running`);
-  });
-}
+// if (process.env.NODE_ENV !== "production") {
+//   app.listen(port, () => {
+//     console.log(`server dengan port ${port} berhasil running`);
+//   });
+// }
 
 // Export untuk Vercel (serverless)
 export const handler = serverless(app);
