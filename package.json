@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tsc -b",
-    "dev": "nodemon dist/index.js",
-    "start": "node dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "dev": "vercel dev",
+    "start": "vercel",
+    "deploy": "vercel deploy --prod"
   },
   "keywords": [],
   "author": "",
